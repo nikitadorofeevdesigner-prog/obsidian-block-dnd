@@ -1,0 +1,9 @@
+{
+  "id": "block-dnd",
+  "name": "Block Drag & Drop",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Drag and drop text blocks within notes, Notion-style",
+  "author": "Nikita",
+  "isDesktopOnly": false
+}

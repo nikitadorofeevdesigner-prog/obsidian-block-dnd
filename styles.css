@@ -1,0 +1,66 @@
+/* Block Drag & Drop - Additional Styles */
+
+/* Smooth transitions for all interactions */
+.cm-line {
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+/* Handle hover effect enhancement */
+.block-dnd-handle-container {
+    pointer-events: auto;
+}
+
+/* Better visual feedback during drag */
+.block-dnd-dragging {
+    transform: scale(0.98);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Drop indicator glow effect */
+.block-dnd-drop-indicator {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Handle icon on dark themes */
+.theme-dark .block-dnd-handle svg {
+    color: var(--text-faint);
+}
+
+.theme-dark .block-dnd-handle:hover svg {
+    color: var(--text-normal);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .block-dnd-handle-container {
+        left: -24px;
+        width: 20px;
+    }
+    
+    .block-dnd-handle {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .block-dnd-handle svg {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Print mode - hide handles */
+@media print {
+    .block-dnd-handle-container {
+        display: none !important;
+    }
+}
