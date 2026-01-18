@@ -21,7 +21,7 @@ A plugin for Obsidian that enables Notion-style drag and drop functionality for 
 
 ### Manual Installation
 
-1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/YOUR_USERNAME/obsidian-block-dnd/releases)
+1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/nikitadorofeevdesigner-prog/obsidian-block-dnd/releases)
 2. Create a folder named `block-dnd` in your vault's `.obsidian/plugins/` directory
 3. Place the downloaded files in the `block-dnd` folder
 4. Reload Obsidian
